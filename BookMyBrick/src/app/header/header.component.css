@@ -1,0 +1,16 @@
+.right_Positioning {
+    position: absolute;
+    /* bottom: 0; */
+    /* right: 100%; */
+    left:95%;
+    width: 45px;
+    /* border: 3px solid #73AD21; */
+  }
+  .right_Positioning1 {
+    position: absolute;
+    /* bottom: 0; */
+    /* right: 100%; */
+    left:88%;
+    width: 48px;
+    /* border: 3px solid #73AD21; */
+  }

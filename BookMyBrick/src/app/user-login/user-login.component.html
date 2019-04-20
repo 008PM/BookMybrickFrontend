@@ -1,0 +1,39 @@
+<div class="row">
+	<div class="col-md-6">
+
+		<div class="card,center-align">
+
+			<div class="card-header bg-white">
+				<h4  class="card-title" align="center">Kindly Login</h4>
+			</div>
+
+			<div class="card-block">
+<!-- Stuffs to be completed -->
+<!--<form #formdata="ngForm"novalidate (ngSubmit) ="registerUser(formdata)" class="center-align">-->
+
+<form [formGroup] = "formdata" (ngSubmit) = "loginUser()" class="center-align">	
+				
+					<div class="form-group">
+						<label for="email">Email-ID</label>
+						<input formControlName="email" id="email" type="text" required name="email" class="form-control" placeholder="Your Mail Id" ngModel>
+					</div>
+
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input formControlName="password" id="password" type="password" required name="password" class="form-control" placeholder="Password" ngModel>
+					</div>
+         
+				<div class="form-group">
+						<button type="submit" class="btn btn-primary" >Login</button>
+					</div>
+
+					<div *ngIf="errors" class="alert alert-danger" role="alert">
+						<strong>Oops!</strong> {{errors}}
+					</div>
+				</form>
+
+				
+			</div>
+
+		</div>
+  </div>
